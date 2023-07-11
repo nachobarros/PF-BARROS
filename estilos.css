@@ -371,12 +371,6 @@ footer {
     font-size: 35px;
   }
 }
-/* @media only screen and (max-width:2104px) and (min-width:2066px){
-    .neu2 .cold h1,
-    .neu1 .cold h1{
-        font-size: 35px;
-    }
-} */
 @media (max-width: 2137px) {
   .row {
     display: grid;
