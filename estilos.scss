@@ -31,18 +31,22 @@ header{
     font-weight: 200;
 }
 
-.logoimagen .logomelo{
-    background-image: url(./media/logo_melo_serviteca.png);
-    height: 80px;
-    width: 100%;
+.logoimagen{
+    .logomelo{
+        background-image: url(./media/logo_melo_serviteca.png);
+        height: 80px;
+        width: 100%;
+    } 
 }
 
-.menu a{
-    color: white;
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 0 15px;
-    transition: 0,1s;
+.menu{
+    a{
+        color: white;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 0 15px;
+        transition: 0,1s;
+    } 
 }
 
 .mostrar-menu,
@@ -124,13 +128,19 @@ header{
 }
 
 
-.contenido-banner h3{
-    font-size: 30px;
-    font-weight: 400;
-    padding: 10px 0px;
+.contenido-banner{
+    h3{
+        font-size: 30px;
+        font-weight: 400;
+        padding: 10px 0px;
+    } 
 }
-.contenido-banner h3 span{
-    font-weight: 600;
+.contenido-banner{
+    h3{
+        span{
+            font-weight: 600;
+        } 
+    } 
 }
 
 .boton-empezar{
@@ -182,6 +192,12 @@ $color3: rgba(0, 62, 168, 0.358);
 }
 
 /* productos index */
+
+// @for $i from 1 through 2 {
+//     .neu-#{$i}{
+//         border-radius: 5px * $i;
+//     }
+// }
 
 .neumaticos,
 .aceadiba,
@@ -292,54 +308,71 @@ footer{
     justify-content: center;
 }
 
-.catneu1{
+@for $i from 1 through 4 {
+    .catneu-#{$i}{
+        opacity: 0.25 * $i;
+    }
+}
+
+@for $i from 1 through 4 {
+    .catace-#{$i}{
+        opacity: 0.25 * $i;
+    }
+}
+
+@for $i from 1 through 4 {
+    .catac-#{$i}{
+        opacity: 0.25 * $i;
+    }
+}
+
+.catneu-1{
     background-image: url(./media/at.jpg);
 }
-.catneu2{
+.catneu-2{
     background-image: url(./media/BFGOODRICH-MUD-TERRAIN-KM3.jpg);
 }
-.catneu3{
+.catneu-3{
     background-image: url(./media/highway.jpg);
 }
-.catneu4{
+.catneu-4{
     background-image: url(./media/camion.jpg);
 }
 
-.catace1{
+.catace-1{
     background-image: url(./media/helix.jpg);
 }
 
-.catace2{
+.catace-2{
     background-image: url(./media/diesel.jpg);
 }
 
-.catace3{
+.catace-3{
     background-image: url(./media/aditivo-aceite-de-motor-1.png);
 }
 
-.catace4{
+.catace-4{
     background-image: url(./media/bateria-45ah-12v-acdelco.jpg);
 }
 
-.catac1{
+.catac-1{
     background-image: url(./media/cablessi.jpg);
     background-repeat: no-repeat;
 }
-.catac2{
+.catac-2{
     background-image: url(./media/plumillala.png);
 }
-.catac3{
+.catac-3{
     background-image: url(./media/cubrevola3.jpg);
     background-repeat: no-repeat;
 }
-.catac4{
+.catac-4{
     background-image: url(./media/parabrisas.png);
 }
 
 .nosotros{
     background-color: $color1; 
 }
-
 
 .nosotros .col-lg{
     height: 500px;
