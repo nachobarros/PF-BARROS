@@ -216,7 +216,7 @@ header {
 }
 
 .colp {
-  margin-top: 350px;
+  margin-top: 290px;
 }
 
 .neu1 {
@@ -387,14 +387,20 @@ footer {
 }
 
 .nosotros .col-lg {
-  height: 500px;
-  width: auto;
+  height: auto;
+}
+
+.nosotros .foto {
+  height: auto;
 }
 
 .fotoamigos {
   background-image: url(./media/trabajo-en-equipo-grupo-figurativo-de-equipo-de-trabajo.jpg);
   background-position: center;
   background-repeat: no-repeat;
+  background-size: contain;
+  height: 200px;
+  width: auto;
 }
 
 .sucursales {
@@ -402,8 +408,18 @@ footer {
 }
 
 .sucursales .col-lg {
-  height: 700px;
-  width: auto;
+  height: 650px;
+  max-width: 100%;
+  text-align: center;
+}
+
+iframe {
+  max-width: 100%;
+  height: 450px;
+}
+
+.titulosomos {
+  padding-top: 20px;
 }
 
 /* RESPONSIVE */
@@ -432,6 +448,13 @@ footer {
   .neu1 .cold h1 {
     font-size: 30px;
   }
+  .somos,
+  .estamos {
+    padding-top: 70px;
+  }
+  .fotoamigos {
+    height: 600px;
+  }
 }
 @media (max-width: 1660px) {
   .row {
@@ -450,15 +473,36 @@ footer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
+  .sucursales .row {
+    height: auto;
+    max-width: 100%;
+    text-align: center;
+  }
   .neu2 .cold,
   .neu1 .cold {
     font-size: 30px;
+  }
+  .fotoamigos {
+    height: 400px;
+  }
+  .nosotros {
+    height: 650px;
+  }
+  .somos,
+  .estamos {
+    padding-top: 40px;
   }
 }
 @media (max-width: 1110px) {
   .neu2 .cold h1,
   .neu1 .cold h1 {
     font-size: 27px;
+  }
+  .fotoamigos {
+    height: 400px;
+  }
+  .nosotros {
+    height: 650px;
   }
 }
 @media (max-width: 1056px) {
@@ -505,6 +549,9 @@ footer {
   .neu1 .cold h1 {
     font-size: 27px;
   }
+  .nosotros {
+    height: 900px;
+  }
 }
 @media only screen and (max-width: 964px) and (min-width: 763px) {
   .neu2 .cold h1,
@@ -517,10 +564,21 @@ footer {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
+  .fotoamigos {
+    height: 300px;
+  }
+  .nosotros {
+    height: 840px;
+  }
 }
 @media (max-width: 701px) {
   .carousel-inner h1 {
     font-size: 50px;
+  }
+  .sucursales .col-lg {
+    height: auto;
+    width: auto;
+    text-align: center;
   }
 }
 @media (max-width: 660px) {
@@ -534,28 +592,77 @@ footer {
   footer {
     padding-right: 75px;
   }
+  .mantencionkm h3,
+  .alineacion h3,
+  .trendelantero h3 {
+    font-size: 20px;
+  }
+  .fotoamigos {
+    height: 280px;
+  }
+  .nosotros {
+    height: 880px;
+  }
 }
 @media (max-width: 501px) {
   .neu2 .cold h1,
   .neu1 .cold h1 {
     font-size: 20px;
   }
+  .neumaticos h1,
+  .aceadiba h1,
+  .accesorios h1 {
+    font-size: 35px;
+  }
+  .fotoamigos {
+    height: 250px;
+  }
+  .nosotros {
+    height: 920px;
+  }
 }
 @media (max-width: 391px) {
   .productos h1 {
-    font-size: 50px;
+    font-size: 30px;
   }
   .colp h1 {
     font-size: 30px;
   }
+  .fotoamigos {
+    height: 250px;
+  }
+  .nosotros {
+    height: 980px;
+  }
 }
 @media (max-width: 360px) {
   .carousel-inner h1 {
-    font-size: 45px;
+    font-size: 35px;
+  }
+  .titulosomos {
+    font-size: 35px;
+  }
+  .nosotros {
+    height: 1050px;
+  }
+  .sucursales .col-lg {
+    font-size: 25px;
+    text-align: center;
   }
   .neu2 .cold h1,
   .neu1 .cold h1 {
     font-size: 20px;
+  }
+  .mantencionkm h3,
+  .alineacion h3,
+  .trendelantero h3 {
+    font-size: 15px;
+  }
+  .nosotros .foto {
+    height: 200px;
+  }
+  #banner::before {
+    font-size: 15px;
   }
 }
 
